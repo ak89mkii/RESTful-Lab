@@ -4,7 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //ADD THIS TO REQUIRE DATABASE!!!!
+require('dotenv').config()
 require('./config/database')
+
 
 var indexRouter = require('./routes/index');
 var apiRouter = require('./routes/api');
